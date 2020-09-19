@@ -1,0 +1,319 @@
+NLOC,CCN,TOKEN,PARAM,LENGTH,FULL_LOCATION,FILE,FUNCTION_NAME,FUNCTION_HEADER,B_LINE,E_LINE
+14,2,111,1,18,"binit@39-56@.\bio.c",".\bio.c","binit","binit( void)",39,56
+25,7,181,2,32,"bget@62-93@.\bio.c",".\bio.c","bget","bget( uint dev , uint blockno)",62,93
+9,2,46,2,10,"bread@97-106@.\bio.c",".\bio.c","bread","bread( uint dev , uint blockno)",97,106
+7,2,36,1,7,"bwrite@110-116@.\bio.c",".\bio.c","bwrite","bwrite( struct buf * b)",110,116
+17,3,121,1,21,"brelse@121-141@.\bio.c",".\bio.c","brelse","brelse( struct buf * b)",121,141
+21,4,176,1,31,"bootmain@18-48@.\bootmain.c",".\bootmain.c","bootmain","bootmain( void)",18,48
+5,2,20,1,6,"waitdisk@51-56@.\bootmain.c",".\bootmain.c","waitdisk","waitdisk( void)",51,56
+12,1,85,2,15,"readsect@60-74@.\bootmain.c",".\bootmain.c","readsect","readsect( void * dst , uint offset)",60,74
+9,2,61,3,18,"readseg@79-96@.\bootmain.c",".\bootmain.c","readseg","readseg( uchar * pa , uint count , uint offset)",79,96
+14,4,77,1,15,"cat@8-22@.\cat.c",".\cat.c","cat","cat( int fd)",8,22
+17,4,100,1,19,"main@25-43@.\cat.c",".\cat.c","main","main( int argc , char * argv [ ])",25,43
+19,5,114,3,23,"printint@28-50@.\console.c",".\console.c","printint","printint( int xx , int base , int sign)",28,50
+45,14,245,1,50,"cprintf@55-104@.\console.c",".\console.c","cprintf","cprintf( char * fmt , ...)",55,104
+16,3,87,1,18,"panic@107-124@.\console.c",".\console.c","panic","panic( char * s)",107,124
+26,7,215,1,32,"cgaputc@132-163@.\console.c",".\console.c","cgaputc","cgaputc( int c)",132,163
+13,4,57,1,14,"consputc@166-179@.\console.c",".\console.c","consputc","consputc( int c)",166,179
+40,16,252,1,42,"consoleintr@192-233@.\console.c",".\console.c","consoleintr","consoleintr( int(*getc)(void))",192,233
+32,7,174,3,36,"consoleread@236-271@.\console.c",".\console.c","consoleread","consoleread( struct inode * ip , char * dst , int n)",236,271
+11,2,71,3,13,"consolewrite@274-286@.\console.c",".\console.c","consolewrite","consolewrite( struct inode * ip , char * buf , int n)",274,286
+8,1,47,1,10,"consoleinit@289-298@.\console.c",".\console.c","consoleinit","consoleinit( void)",289,298
+7,3,55,1,8,"main@6-13@.\echo.c",".\echo.c","main","main( int argc , char * argv [ ])",6,13
+85,22,683,2,104,"exec@11-114@.\exec.c",".\exec.c","exec","exec( char * path , char ** argv)",11,114
+4,1,16,1,4,"fileinit@20-23@.\file.c",".\file.c","fileinit","fileinit( void)",20,23
+14,3,78,1,15,"filealloc@27-41@.\file.c",".\file.c","filealloc","filealloc( void)",27,41
+9,2,46,1,9,"filedup@45-53@.\file.c",".\file.c","filedup","filedup( struct file * f)",45,53
+22,5,125,1,24,"fileclose@57-80@.\file.c",".\file.c","fileclose","fileclose( struct file * f)",57,80
+10,2,54,2,10,"filestat@84-93@.\file.c",".\file.c","filestat","filestat( struct file * f , struct stat * st)",84,93
+16,5,112,3,17,"fileread@97-113@.\file.c",".\file.c","fileread","fileread( struct file * f , char * addr , int n)",97,113
+30,10,201,3,39,"filewrite@118-156@.\file.c",".\file.c","filewrite","filewrite( struct file * f , char * addr , int n)",118,156
+4,1,26,2,4,"printf@11-14@.\forktest.c",".\forktest.c","printf","printf( int fd , const char * s , ...)",11,14
+27,8,140,1,33,"forktest@17-49@.\forktest.c",".\forktest.c","forktest","forktest( void)",17,49
+5,1,14,1,5,"main@52-56@.\forktest.c",".\forktest.c","main","main( void)",52,56
+7,1,46,2,8,"readsb@32-39@.\fs.c",".\fs.c","readsb","readsb( int dev , struct superblock * sb)",32,39
+8,1,45,2,9,"bzero@43-51@.\fs.c",".\fs.c","bzero","bzero( int dev , int bno)",43,51
+21,5,153,1,22,"balloc@57-78@.\fs.c",".\fs.c","balloc","balloc( uint dev)",57,78
+13,2,94,2,14,"bfree@82-95@.\fs.c",".\fs.c","bfree","bfree( int dev , uint b)",82,95
+13,2,93,1,15,"iinit@172-186@.\fs.c",".\fs.c","iinit","iinit( int dev)",172,186
+19,3,126,2,20,"ialloc@195-214@.\fs.c",".\fs.c","ialloc","ialloc( uint dev , short type)",195,214
+15,1,122,1,16,"iupdate@221-236@.\fs.c",".\fs.c","iupdate","iupdate( struct inode * ip)",221,236
+24,8,161,2,31,"iget@242-272@.\fs.c",".\fs.c","iget","iget( uint dev , uint inum)",242,272
+7,1,33,1,7,"idup@277-283@.\fs.c",".\fs.c","idup","idup( struct inode * ip)",277,283
+22,5,171,1,25,"ilock@288-312@.\fs.c",".\fs.c","ilock","ilock( struct inode * ip)",288,312
+6,4,43,1,7,"iunlock@316-322@.\fs.c",".\fs.c","iunlock","iunlock( struct inode * ip)",316,322
+19,4,113,1,21,"iput@332-352@.\fs.c",".\fs.c","iput","iput( struct inode * ip)",332,352
+5,1,19,1,5,"iunlockput@356-360@.\fs.c",".\fs.c","iunlockput","iunlockput( struct inode * ip)",356,360
+24,6,176,2,28,"bmap@373-400@.\fs.c",".\fs.c","bmap","bmap( struct inode * ip , uint bn)",373,400
+25,6,182,1,28,"itrunc@408-435@.\fs.c",".\fs.c","itrunc","itrunc( struct inode * ip)",408,435
+8,1,54,2,8,"stati@440-447@.\fs.c",".\fs.c","stati","stati( struct inode * ip , struct stat * st)",440,447
+21,9,200,4,24,"readi@453-476@.\fs.c",".\fs.c","readi","readi( struct inode * ip , char * dst , uint off , uint n)",453,476
+26,11,226,4,30,"writei@482-511@.\fs.c",".\fs.c","writei","writei( struct inode * ip , char * src , uint off , uint n)",482,511
+4,1,24,2,4,"namecmp@517-520@.\fs.c",".\fs.c","namecmp","namecmp( const char * s , const char * t)",517,520
+20,7,144,3,24,"dirlookup@525-548@.\fs.c",".\fs.c","dirlookup","dirlookup( struct inode * dp , char * name , uint * poff)",525,548
+21,6,169,3,27,"dirlink@552-578@.\fs.c",".\fs.c","dirlink","dirlink( struct inode * dp , char * name , uint inum)",552,578
+22,7,111,2,23,"skipelem@596-618@.\fs.c",".\fs.c","skipelem","skipelem( char * path , char * name)",596,618
+30,8,163,3,33,"namex@625-657@.\fs.c",".\fs.c","namex","namex( char * path , int nameiparent , char * name)",625,657
+5,1,24,1,5,"namei@660-664@.\fs.c",".\fs.c","namei","namei( char * path)",660,664
+4,1,22,2,4,"nameiparent@667-670@.\fs.c",".\fs.c","nameiparent","nameiparent( char * path , char * name)",667,670
+25,6,160,2,26,"grep@11-36@.\grep.c",".\grep.c","grep","grep( char * pattern , int fd)",11,36
+23,5,134,1,26,"main@39-64@.\grep.c",".\grep.c","main","main( int argc , char * argv [ ])",39,64
+10,4,58,2,10,"match@73-82@.\grep.c",".\grep.c","match","match( char * re , char * text)",73,82
+12,8,109,2,12,"matchhere@85-96@.\grep.c",".\grep.c","matchhere","matchhere( char * re , char * text)",85,96
+8,5,53,3,8,"matchstar@99-106@.\grep.c",".\grep.c","matchstar","matchstar( int c , char * re , char * text)",99,106
+9,4,55,1,10,"idewait@39-48@.\ide.c",".\ide.c","idewait","idewait( int checkerr)",39,48
+15,3,91,1,20,"ideinit@51-70@.\ide.c",".\ide.c","ideinit","ideinit( void)",51,70
+25,7,213,1,27,"idestart@74-100@.\ide.c",".\ide.c","idestart","idestart( struct buf * b)",74,100
+18,5,108,1,28,"ideintr@104-131@.\ide.c",".\ide.c","ideintr","ideintr( void)",104,131
+21,8,148,1,31,"iderw@138-168@.\ide.c",".\ide.c","iderw","iderw( struct buf * b)",138,168
+25,7,138,1,27,"main@11-37@.\init.c",".\init.c","main","main( void)",11,37
+5,1,18,1,5,"ioapicread@35-39@.\ioapic.c",".\ioapic.c","ioapicread","ioapicread( int reg)",35,39
+5,1,22,2,5,"ioapicwrite@42-46@.\ioapic.c",".\ioapic.c","ioapicwrite","ioapicwrite( int reg , uint data)",42,46
+13,3,103,1,17,"ioapicinit@49-65@.\ioapic.c",".\ioapic.c","ioapicinit","ioapicinit( void)",49,65
+5,1,39,2,8,"ioapicenable@68-75@.\ioapic.c",".\ioapic.c","ioapicenable","ioapicenable( int irq , int cpunum)",68,75
+6,1,35,2,6,"kinit1@32-37@.\kalloc.c",".\kalloc.c","kinit1","kinit1( void * vstart , void * vend)",32,37
+5,1,25,2,5,"kinit2@40-44@.\kalloc.c",".\kalloc.c","kinit2","kinit2( void * vstart , void * vend)",40,44
+7,2,52,2,7,"freerange@47-53@.\kalloc.c",".\kalloc.c","freerange","freerange( void * vstart , void * vend)",47,53
+14,6,98,1,18,"kfree@60-77@.\kalloc.c",".\kalloc.c","kfree","kfree( char * v)",60,77
+12,4,64,1,13,"kalloc@83-95@.\kalloc.c",".\kalloc.c","kalloc","kalloc( void)",83,95
+33,11,206,1,38,"kbdgetc@7-44@.\kbd.c",".\kbd.c","kbdgetc","kbdgetc( void)",7,44
+4,1,11,1,4,"kbdintr@47-50@.\kbd.c",".\kbd.c","kbdintr","kbdintr( void)",47,50
+11,3,61,2,12,"main@6-17@.\kill.c",".\kill.c","main","main( int argc , char ** argv)",6,17
+5,1,22,2,5,"lapicw@48-52@.\lapic.c",".\lapic.c","lapicw","lapicw( int index , int value)",48,52
+22,4,157,1,44,"lapicinit@55-98@.\lapic.c",".\lapic.c","lapicinit","lapicinit( void)",55,98
+6,2,23,1,6,"lapicid@101-106@.\lapic.c",".\lapic.c","lapicid","lapicid( void)",101,106
+5,2,17,1,5,"lapiceoi@110-114@.\lapic.c",".\lapic.c","lapiceoi","lapiceoi( void)",110,114
+3,1,7,1,3,"microdelay@119-121@.\lapic.c",".\lapic.c","microdelay","microdelay( int us)",119,121
+20,2,152,2,33,"lapicstartap@129-161@.\lapic.c",".\lapic.c","lapicstartap","lapicstartap( uchar apicid , uint addr)",129,161
+6,1,25,1,7,"cmos_read@175-181@.\lapic.c",".\lapic.c","cmos_read","cmos_read( uint reg)",175,181
+9,1,63,1,9,"fill_rtcdate@184-192@.\lapic.c",".\lapic.c","fill_rtcdate","fill_rtcdate( struct rtcdate * r)",184,192
+25,5,139,1,34,"cmostime@196-229@.\lapic.c",".\lapic.c","cmostime","cmostime( struct rtcdate * r)",196,229
+10,3,70,1,10,"main@6-15@.\ln.c",".\ln.c","main","main( int argc , char * argv [ ])",6,15
+12,2,70,1,13,"initlog@54-66@.\log.c",".\log.c","initlog","initlog( int dev)",54,66
+12,2,97,1,13,"install_trans@70-82@.\log.c",".\log.c","install_trans","install_trans( void)",70,82
+11,2,91,1,11,"read_head@86-96@.\log.c",".\log.c","read_head","read_head( void)",86,96
+12,2,96,1,12,"write_head@102-113@.\log.c",".\log.c","write_head","write_head( void)",102,113
+7,1,26,1,7,"recover_from_log@116-122@.\log.c",".\log.c","recover_from_log","recover_from_log( void)",116,122
+15,4,92,1,16,"begin_op@126-141@.\log.c",".\log.c","begin_op","begin_op( void)",126,141
+22,4,111,1,29,"end_op@146-174@.\log.c",".\log.c","end_op","end_op( void)",146,174
+12,2,97,1,13,"write_log@178-190@.\log.c",".\log.c","write_log","write_log( void)",178,190
+10,2,41,0,10,"commit@193-202@.\log.c",".\log.c","commit","commit()",193,202
+18,7,140,1,20,"log_write@214-233@.\log.c",".\log.c","log_write","log_write( struct buf * b)",214,233
+13,4,94,1,17,"fmtname@7-23@.\ls.c",".\ls.c","fmtname","fmtname( char * path)",7,23
+42,9,281,1,46,"ls@26-71@.\ls.c",".\ls.c","ls","ls( char * path)",26,71
+11,3,58,1,12,"main@74-85@.\ls.c",".\ls.c","main","main( int argc , char * argv [ ])",74,85
+21,1,101,1,21,"main@18-38@.\main.c",".\main.c","main","main( void)",18,38
+7,1,22,1,7,"mpenter@42-48@.\main.c",".\main.c","mpenter","mpenter( void)",42,48
+7,1,41,1,7,"mpmain@52-58@.\main.c",".\main.c","mpmain","mpmain( void)",52,58
+20,4,155,1,32,"startothers@64-95@.\main.c",".\main.c","startothers","startothers( void)",64,95
+5,1,19,1,5,"ideinit@22-26@.\memide.c",".\memide.c","ideinit","ideinit( void)",22,26
+3,1,6,1,4,"ideintr@30-33@.\memide.c",".\memide.c","ideintr","ideintr( void)",30,33
+19,6,131,1,22,"iderw@39-60@.\memide.c",".\memide.c","iderw","iderw( struct buf * b)",39,60
+15,4,82,1,18,"main@6-23@.\mkdir.c",".\mkdir.c","main","main( int argc , char * argv [ ])",6,23
+8,1,41,1,8,"xshort@46-53@.\mkfs.c",".\mkfs.c","xshort","xshort( ushort x)",46,53
+10,1,61,1,10,"xint@56-65@.\mkfs.c",".\mkfs.c","xint","xint( uint x)",56,65
+71,8,625,1,101,"main@68-168@.\mkfs.c",".\mkfs.c","main","main( int argc , char * argv [ ])",68,168
+11,3,65,2,11,"wsect@171-181@.\mkfs.c",".\mkfs.c","wsect","wsect( uint sec , void * buf)",171,181
+11,1,72,2,12,"winode@184-195@.\mkfs.c",".\mkfs.c","winode","winode( uint inum , struct dinode * ip)",184,195
+10,1,65,2,11,"rinode@198-208@.\mkfs.c",".\mkfs.c","rinode","rinode( uint inum , struct dinode * ip)",198,208
+11,3,65,2,11,"rsect@211-221@.\mkfs.c",".\mkfs.c","rsect","rsect( uint sec , void * buf)",211,221
+11,1,66,1,12,"ialloc@224-235@.\mkfs.c",".\mkfs.c","ialloc","ialloc( ushort type)",224,235
+13,2,97,1,14,"balloc@238-251@.\mkfs.c",".\mkfs.c","balloc","balloc( int used)",238,251
+40,6,322,3,42,"iappend@256-297@.\mkfs.c",".\mkfs.c","iappend","iappend( uint inum , void * xp , int n)",256,297
+8,2,43,2,9,"sum@19-27@.\mp.c",".\mp.c","sum","sum( uchar * addr , int len)",19,27
+10,4,88,2,11,"mpsearch1@31-41@.\mp.c",".\mp.c","mpsearch1","mpsearch1( uint a , int len)",31,41
+16,4,123,1,17,"mpsearch@49-65@.\mp.c",".\mp.c","mpsearch","mpsearch( void)",49,65
+16,7,118,1,17,"mpconfig@73-89@.\mp.c",".\mp.c","mpconfig","mpconfig( struct mp ** pmp)",73,89
+44,11,241,1,48,"mpinit@92-139@.\mp.c",".\mp.c","mpinit","mpinit( void)",92,139
+5,1,24,1,6,"picinit@11-16@.\picirq.c",".\picirq.c","picinit","picinit( void)",11,16
+32,7,228,2,35,"pipealloc@23-57@.\pipe.c",".\pipe.c","pipealloc","pipealloc( struct file ** f0 , struct file ** f1)",23,57
+16,4,99,2,16,"pipeclose@60-75@.\pipe.c",".\pipe.c","pipeclose","pipeclose( struct pipe * p , int writable)",60,75
+19,5,141,3,20,"pipewrite@79-98@.\pipe.c",".\pipe.c","pipewrite","pipewrite( struct pipe * p , char * addr , int n)",79,98
+20,6,141,3,21,"piperead@101-121@.\pipe.c",".\pipe.c","piperead","piperead( struct pipe * p , char * addr , int n)",101,121
+4,1,20,2,4,"putc@6-9@.\printf.c",".\printf.c","putc","putc( int fd , char c)",6,9
+22,6,129,4,25,"printint@12-36@.\printf.c",".\printf.c","printint","printint( int fd , int xx , int base , int sgn)",12,36
+44,13,271,2,46,"printf@40-85@.\printf.c",".\printf.c","printf","printf( int fd , const char * fmt , ...)",40,85
+4,1,16,1,4,"pinit@24-27@.\proc.c",".\proc.c","pinit","pinit( void)",24,27
+3,1,12,0,3,"cpuid@31-33@.\proc.c",".\proc.c","cpuid","cpuid()",31,33
+12,4,68,1,16,"mycpu@38-53@.\proc.c",".\proc.c","mycpu","mycpu( void)",38,53
+9,1,39,1,9,"myproc@58-66@.\proc.c",".\proc.c","myproc","myproc( void)",58,66
+29,4,205,1,43,"allocproc@74-116@.\proc.c",".\proc.c","allocproc","allocproc( void)",74,116
+24,2,212,1,34,"userinit@121-154@.\proc.c",".\proc.c","userinit","userinit( void)",121,154
+16,5,106,1,17,"growproc@159-175@.\proc.c",".\proc.c","growproc","growproc( int n)",159,175
+29,5,220,1,42,"fork@181-222@.\proc.c",".\proc.c","fork","fork( void)",181,222
+30,7,182,1,41,"exit@228-268@.\proc.c",".\proc.c","exit","exit( void)",228,268
+33,7,194,1,40,"wait@273-312@.\proc.c",".\proc.c","wait","wait( void)",273,312
+21,4,127,1,34,"scheduler@323-356@.\proc.c",".\proc.c","scheduler","scheduler( void)",323,356
+16,5,105,1,17,"sched@366-382@.\proc.c",".\proc.c","sched","sched( void)",366,382
+7,1,34,1,7,"yield@386-392@.\proc.c",".\proc.c","yield","yield( void)",386,392
+10,2,40,1,17,"forkret@397-413@.\proc.c",".\proc.c","forkret","forkret( void)",397,413
+20,5,114,2,35,"sleep@418-452@.\proc.c",".\proc.c","sleep","sleep( void * chan , struct spinlock * lk)",418,452
+7,4,54,1,8,"wakeup1@458-465@.\proc.c",".\proc.c","wakeup1","wakeup1( void * chan)",458,465
+6,1,29,1,6,"wakeup@469-474@.\proc.c",".\proc.c","wakeup","wakeup( void * chan)",469,474
+16,4,96,1,18,"kill@480-497@.\proc.c",".\proc.c","kill","kill( int pid)",480,497
+30,9,211,1,31,"procdump@504-534@.\proc.c",".\proc.c","procdump","procdump( void)",504,534
+15,4,82,1,18,"main@6-23@.\rm.c",".\rm.c","main","main( int argc , char * argv [ ])",6,23
+67,14,399,1,74,"runcmd@58-131@.\sh.c",".\sh.c","runcmd","runcmd( struct cmd * cmd)",58,131
+9,2,50,2,9,"getcmd@134-142@.\sh.c",".\sh.c","getcmd","getcmd( char * buf , int nbuf)",134,142
+23,9,149,1,28,"main@145-172@.\sh.c",".\sh.c","main","main( void)",145,172
+5,1,21,1,5,"panic@175-179@.\sh.c",".\sh.c","panic","panic( char * s)",175,179
+8,2,30,1,9,"fork1@182-190@.\sh.c",".\sh.c","fork1","fork1( void)",182,190
+8,1,49,1,9,"execcmd@196-204@.\sh.c",".\sh.c","execcmd","execcmd( void)",196,204
+13,1,96,5,14,"redircmd@207-220@.\sh.c",".\sh.c","redircmd","redircmd( struct cmd * subcmd , char * file , char * efile , int mode , int fd)",207,220
+10,1,69,2,11,"pipecmd@223-233@.\sh.c",".\sh.c","pipecmd","pipecmd( struct cmd * left , struct cmd * right)",223,233
+10,1,69,2,11,"listcmd@236-246@.\sh.c",".\sh.c","listcmd","listcmd( struct cmd * left , struct cmd * right)",236,246
+9,1,58,1,10,"backcmd@249-258@.\sh.c",".\sh.c","backcmd","backcmd( struct cmd * subcmd)",249,258
+41,19,191,4,43,"gettoken@266-308@.\sh.c",".\sh.c","gettoken","gettoken( char ** ps , char * es , char ** q , char ** eq)",266,308
+9,4,59,3,10,"peek@311-320@.\sh.c",".\sh.c","peek","peek( char ** ps , char * es , char * toks)",311,320
+14,2,76,1,15,"parsecmd@328-342@.\sh.c",".\sh.c","parsecmd","parsecmd( char * s)",328,342
+14,3,98,2,15,"parseline@345-359@.\sh.c",".\sh.c","parseline","parseline( char ** ps , char * es)",345,359
+10,2,67,2,11,"parsepipe@362-372@.\sh.c",".\sh.c","parsepipe","parsepipe( char ** ps , char * es)",362,372
+22,6,148,3,23,"parseredirs@375-397@.\sh.c",".\sh.c","parseredirs","parseredirs( struct cmd * cmd , char ** ps , char * es)",375,397
+13,3,96,2,14,"parseblock@400-413@.\sh.c",".\sh.c","parseblock","parseblock( char ** ps , char * es)",400,413
+28,6,195,2,31,"parseexec@416-446@.\sh.c",".\sh.c","parseexec","parseexec( char ** ps , char * es)",416,446
+38,8,202,1,44,"nulterminate@450-493@.\sh.c",".\sh.c","nulterminate","nulterminate( struct cmd * cmd)",450,493
+7,1,41,2,7,"initsleeplock@14-20@.\sleeplock.c",".\sleeplock.c","initsleeplock","initsleeplock( struct sleeplock * lk , char * name)",14,20
+10,2,59,1,10,"acquiresleep@23-32@.\sleeplock.c",".\sleeplock.c","acquiresleep","acquiresleep( struct sleeplock * lk)",23,32
+8,1,42,1,8,"releasesleep@35-42@.\sleeplock.c",".\sleeplock.c","releasesleep","releasesleep( struct sleeplock * lk)",35,42
+8,2,49,1,9,"holdingsleep@45-53@.\sleeplock.c",".\sleeplock.c","holdingsleep","holdingsleep( struct sleeplock * lk)",45,53
+6,1,31,2,6,"initlock@13-18@.\spinlock.c",".\spinlock.c","initlock","initlock( struct spinlock * lk , char * name)",13,18
+11,3,62,1,19,"acquire@25-43@.\spinlock.c",".\spinlock.c","acquire","acquire( struct spinlock * lk)",25,43
+10,2,59,1,22,"release@47-68@.\spinlock.c",".\spinlock.c","release","release( struct spinlock * lk)",47,68
+14,6,107,1,15,"getcallerpcs@72-86@.\spinlock.c",".\spinlock.c","getcallerpcs","getcallerpcs( void * v , uint pcs [ ])",72,86
+8,2,37,1,8,"holding@90-97@.\spinlock.c",".\spinlock.c","holding","holding( struct spinlock * lock)",90,97
+9,2,47,1,10,"pushcli@105-114@.\spinlock.c",".\spinlock.c","pushcli","pushcli( void)",105,114
+9,5,55,1,9,"popcli@117-125@.\spinlock.c",".\spinlock.c","popcli","popcli( void)",117,125
+24,5,184,1,33,"main@17-49@.\stressfs.c",".\stressfs.c","main","main( int argc , char * argv [ ])",17,49
+9,3,82,3,9,"memset@5-13@.\string.c",".\string.c","memset","memset( void * dst , int c , uint n)",5,13
+12,3,66,3,14,"memcmp@16-29@.\string.c",".\string.c","memcmp","memcmp( const void * v1 , const void * v2 , uint n)",16,29
+16,5,89,3,18,"memmove@32-49@.\string.c",".\string.c","memmove","memmove( void * dst , const void * src , uint n)",32,49
+4,1,26,3,4,"memcpy@53-56@.\string.c",".\string.c","memcpy","memcpy( void * dst , const void * src , uint n)",53,56
+8,5,63,3,8,"strncmp@59-66@.\string.c",".\string.c","strncmp","strncmp( const char * p , const char * q , uint n)",59,66
+10,3,60,3,11,"strncpy@69-79@.\string.c",".\string.c","strncpy","strncpy( char * s , const char * t , int n)",69,79
+11,3,61,3,12,"safestrcpy@83-94@.\string.c",".\string.c","safestrcpy","safestrcpy( char * s , const char * t , int n)",83,94
+7,2,30,1,8,"strlen@97-104@.\string.c",".\string.c","strlen","strlen( const char * s)",97,104
+8,3,55,2,9,"fetchint@18-26@.\syscall.c",".\syscall.c","fetchint","fetchint( uint addr , int * ip)",18,26
+14,4,91,2,15,"fetchstr@32-46@.\syscall.c",".\syscall.c","fetchstr","fetchstr( uint addr , char ** pp)",32,46
+4,1,33,2,4,"argint@50-53@.\syscall.c",".\syscall.c","argint","argint( int n , int * ip)",50,53
+11,5,84,3,12,"argptr@59-70@.\syscall.c",".\syscall.c","argptr","argptr( int n , char ** pp , int size)",59,70
+7,2,38,2,7,"argstr@77-83@.\syscall.c",".\syscall.c","argstr","argstr( int n , char ** pp)",77,83
+13,4,86,1,14,"syscall@132-145@.\syscall.c",".\syscall.c","syscall","syscall( void)",132,145
+14,7,90,3,15,"argfd@22-36@.\sysfile.c",".\sysfile.c","argfd","argfd( int n , int * pfd , struct file ** pf)",22,36
+12,3,65,1,13,"fdalloc@41-53@.\sysfile.c",".\sysfile.c","fdalloc","fdalloc( struct file * f)",41,53
+11,3,57,1,12,"sys_dup@56-67@.\sysfile.c",".\sysfile.c","sys_dup","sys_dup( void)",56,67
+9,4,68,1,10,"sys_read@70-79@.\sysfile.c",".\sysfile.c","sys_read","sys_read( void)",70,79
+9,4,68,1,10,"sys_write@82-91@.\sysfile.c",".\sysfile.c","sys_write","sys_write( void)",82,91
+10,2,52,1,11,"sys_close@94-104@.\sysfile.c",".\sysfile.c","sys_close","sys_close( void)",94,104
+8,3,62,1,9,"sys_fstat@107-115@.\sysfile.c",".\sysfile.c","sys_fstat","sys_fstat( void)",107,115
+39,8,225,1,47,"sys_link@119-165@.\sysfile.c",".\sysfile.c","sys_link","sys_link( void)",119,165
+12,4,87,1,13,"isdirempty@169-181@.\sysfile.c",".\sysfile.c","isdirempty","isdirempty( struct inode * dp)",169,181
+43,11,272,1,55,"sys_unlink@185-239@.\sysfile.c",".\sysfile.c","sys_unlink","sys_unlink( void)",185,239
+33,10,235,4,42,"create@242-283@.\sysfile.c",".\sysfile.c","create","create( char * path , short type , short major , short minor)",242,283
+43,12,254,1,48,"sys_open@286-333@.\sysfile.c",".\sysfile.c","sys_open","sys_open( void)",286,333
+13,3,70,1,14,"sys_mkdir@336-349@.\sysfile.c",".\sysfile.c","sys_mkdir","sys_mkdir( void)",336,349
+17,5,97,1,18,"sys_mknod@352-369@.\sysfile.c",".\sysfile.c","sys_mknod","sys_mknod( void)",352,369
+22,4,114,1,23,"sys_chdir@372-394@.\sysfile.c",".\sysfile.c","sys_chdir","sys_chdir( void)",372,394
+23,8,161,1,24,"sys_exec@397-420@.\sysfile.c",".\sysfile.c","sys_exec","sys_exec( void)",397,420
+21,6,149,1,22,"sys_pipe@423-444@.\sysfile.c",".\sysfile.c","sys_pipe","sys_pipe( void)",423,444
+4,1,11,1,4,"sys_fork@11-14@.\sysproc.c",".\sysproc.c","sys_fork","sys_fork( void)",11,14
+5,1,13,1,5,"sys_exit@17-21@.\sysproc.c",".\sysproc.c","sys_exit","sys_exit( void)",17,21
+4,1,11,1,4,"sys_wait@24-27@.\sysproc.c",".\sysproc.c","sys_wait","sys_wait( void)",24,27
+7,2,31,1,8,"sys_kill@30-37@.\sysproc.c",".\sysproc.c","sys_kill","sys_kill( void)",30,37
+4,1,13,1,4,"sys_getpid@40-43@.\sysproc.c",".\sysproc.c","sys_getpid","sys_getpid( void)",40,43
+11,3,52,1,12,"sys_sbrk@46-57@.\sysproc.c",".\sysproc.c","sys_sbrk","sys_sbrk( void)",46,57
+18,4,86,1,19,"sys_sleep@60-78@.\sysproc.c",".\sysproc.c","sys_sleep","sys_sleep( void)",60,78
+8,1,28,1,9,"sys_uptime@83-91@.\sysproc.c",".\sysproc.c","sys_uptime","sys_uptime( void)",83,91
+8,2,74,1,10,"tvinit@18-27@.\trap.c",".\trap.c","tvinit","tvinit( void)",18,27
+4,1,16,1,4,"idtinit@30-33@.\trap.c",".\trap.c","idtinit","idtinit( void)",30,33
+61,23,366,1,76,"trap@37-112@.\trap.c",".\trap.c","trap","trap( struct trapframe * tf)",37,112
+19,3,131,1,30,"uartinit@20-49@.\uart.c",".\uart.c","uartinit","uartinit( void)",20,49
+9,4,56,1,10,"uartputc@52-61@.\uart.c",".\uart.c","uartputc","uartputc( int c)",52,61
+8,3,41,1,8,"uartgetc@64-71@.\uart.c",".\uart.c","uartgetc","uartgetc( void)",64,71
+4,1,11,1,4,"uartintr@74-77@.\uart.c",".\uart.c","uartintr","uartintr( void)",74,77
+8,2,39,2,9,"strcpy@8-16@.\ulib.c",".\ulib.c","strcpy","strcpy( char * s , const char * t)",8,16
+6,3,44,2,6,"strcmp@19-24@.\ulib.c",".\ulib.c","strcmp","strcmp( const char * p , const char * q)",19,24
+7,2,30,1,8,"strlen@27-34@.\ulib.c",".\ulib.c","strlen","strlen( const char * s)",27,34
+5,1,26,3,5,"memset@37-41@.\ulib.c",".\ulib.c","memset","memset( void * dst , int c , uint n)",37,41
+7,3,38,2,7,"strchr@44-50@.\ulib.c",".\ulib.c","strchr","strchr( const char * s , char c)",44,50
+15,5,84,2,16,"gets@53-68@.\ulib.c",".\ulib.c","gets","gets( char * buf , int max)",53,68
+11,2,56,2,12,"stat@71-82@.\ulib.c",".\ulib.c","stat","stat( const char * n , struct stat * st)",71,82
+8,3,43,1,9,"atoi@85-93@.\ulib.c",".\ulib.c","atoi","atoi( const char * s)",85,93
+10,2,51,3,11,"memmove@96-106@.\ulib.c",".\ulib.c","memmove","memmove( void * vdst , const void * vsrc , int n)",96,106
+19,8,194,1,20,"free@25-44@.\umalloc.c",".\umalloc.c","free","free( void * ap)",25,44
+14,3,83,1,15,"morecore@47-61@.\umalloc.c",".\umalloc.c","morecore","morecore( uint nu)",47,61
+26,7,193,1,27,"malloc@64-90@.\umalloc.c",".\umalloc.c","malloc","malloc( uint nbytes)",64,90
+21,5,108,1,22,"iputtest@18-39@.\usertests.c",".\usertests.c","iputtest","iputtest( void)",18,39
+27,6,130,1,29,"exitiputtest@43-71@.\usertests.c",".\usertests.c","exitiputtest","exitiputtest( void)",43,71
+29,6,142,1,30,"openiputtest@85-114@.\usertests.c",".\usertests.c","openiputtest","openiputtest( void)",85,114
+17,3,84,1,18,"opentest@119-136@.\usertests.c",".\usertests.c","opentest","opentest( void)",119,136
+45,8,254,1,47,"writetest@139-185@.\usertests.c",".\usertests.c","writetest","writetest( void)",139,185
+49,11,294,1,55,"writetest1@188-242@.\usertests.c",".\usertests.c","writetest1","writetest1( void)",188,242
+19,3,122,1,21,"createtest@245-265@.\usertests.c",".\usertests.c","createtest","createtest( void)",245,265
+21,5,108,1,25,"dirtest@267-291@.\usertests.c",".\usertests.c","dirtest","dirtest( void)",267,291
+8,2,37,1,8,"exectest@294-301@.\usertests.c",".\usertests.c","exectest","exectest( void)",294,301
+49,12,315,1,50,"pipe1@306-355@.\usertests.c",".\usertests.c","pipe1","pipe1( void)",306,355
+39,9,220,1,43,"preempt@359-401@.\usertests.c",".\usertests.c","preempt","preempt( void)",359,401
+20,5,88,1,21,"exitwait@405-425@.\usertests.c",".\usertests.c","exitwait","exitwait( void)",405,425
+30,5,157,1,31,"mem@428-458@.\usertests.c",".\usertests.c","mem","mem( void)",428,458
+47,13,297,1,49,"sharedfd@465-513@.\usertests.c",".\usertests.c","sharedfd","sharedfd( void)",465,513
+55,13,359,1,63,"fourfiles@518-580@.\usertests.c",".\usertests.c","fourfiles","fourfiles( void)",518,580
+63,21,444,1,70,"createdelete@584-653@.\usertests.c",".\usertests.c","createdelete","createdelete( void)",584,653
+39,7,231,1,43,"unlinkread@657-699@.\usertests.c",".\usertests.c","unlinkread","unlinkread( void)",657,699
+50,10,286,1,60,"linktest@702-761@.\usertests.c",".\usertests.c","linktest","linktest( void)",702,761
+84,23,538,1,89,"concreate@765-853@.\usertests.c",".\usertests.c","concreate","concreate( void)",765,853
+27,7,154,0,32,"linkunlink@858-889@.\usertests.c",".\usertests.c","linkunlink","linkunlink()",858,889
+35,6,230,1,40,"bigdir@893-932@.\usertests.c",".\usertests.c","bigdir","bigdir( void)",893,932
+166,39,961,1,181,"subdir@935-1115@.\usertests.c",".\usertests.c","subdir","subdir( void)",935,1115
+24,5,141,1,27,"bigwrite@1119-1145@.\usertests.c",".\usertests.c","bigwrite","bigwrite( void)",1119,1145
+50,12,288,1,54,"bigfile@1148-1201@.\usertests.c",".\usertests.c","bigfile","bigfile( void)",1148,1201
+34,7,177,1,39,"fourteen@1204-1242@.\usertests.c",".\usertests.c","fourteen","fourteen( void)",1204,1242
+37,9,196,1,37,"rmdot@1245-1281@.\usertests.c",".\usertests.c","rmdot","rmdot( void)",1245,1281
+53,11,292,1,57,"dirfile@1284-1340@.\usertests.c",".\usertests.c","dirfile","dirfile( void)",1284,1340
+26,6,148,1,31,"iref@1344-1374@.\usertests.c",".\usertests.c","iref","iref( void)",1344,1374
+27,8,138,1,33,"forktest@1380-1412@.\usertests.c",".\usertests.c","forktest","forktest( void)",1380,1412
+110,25,769,1,133,"sbrktest@1415-1547@.\usertests.c",".\usertests.c","sbrktest","sbrktest( void)",1415,1547
+11,1,41,1,11,"validateint@1550-1560@.\usertests.c",".\usertests.c","validateint","validateint( int * p)",1550,1560
+22,4,128,1,28,"validatetest@1563-1590@.\usertests.c",".\usertests.c","validatetest","validatetest( void)",1563,1590
+12,3,63,1,13,"bsstest@1595-1607@.\usertests.c",".\usertests.c","bsstest","bsstest( void)",1595,1607
+30,5,173,1,31,"bigargtest@1613-1643@.\usertests.c",".\usertests.c","bigargtest","bigargtest( void)",1613,1643
+45,7,303,0,49,"fsfull@1648-1696@.\usertests.c",".\usertests.c","fsfull","fsfull()",1648,1696
+22,3,125,0,27,"uio@1699-1725@.\usertests.c",".\usertests.c","uio","uio()",1699,1725
+12,2,63,0,12,"argptest@1727-1738@.\usertests.c",".\usertests.c","argptest","argptest()",1727,1738
+5,1,16,0,5,"rand@1742-1746@.\usertests.c",".\usertests.c","rand","rand()",1742,1746
+45,2,198,1,55,"main@1749-1803@.\usertests.c",".\usertests.c","main","main( int argc , char * argv [ ])",1749,1803
+10,1,111,1,15,"seginit@16-30@.\vm.c",".\vm.c","seginit","seginit( void)",16,30
+15,4,117,3,20,"walkpgdir@36-55@.\vm.c",".\vm.c","walkpgdir","walkpgdir( pde_t * pgdir , const void * va , int alloc)",36,55
+19,5,134,5,20,"mappages@61-80@.\vm.c",".\vm.c","mappages","mappages( pde_t * pgdir , void * va , uint size , uint pa , int perm)",61,80
+17,5,126,1,18,"setupkvm@119-136@.\vm.c",".\vm.c","setupkvm","setupkvm( void)",119,136
+5,1,16,1,5,"kvmalloc@141-145@.\vm.c",".\vm.c","kvmalloc","kvmalloc( void)",141,145
+4,1,14,1,4,"switchkvm@150-153@.\vm.c",".\vm.c","switchkvm","switchkvm( void)",150,153
+19,4,162,1,22,"switchuvm@157-178@.\vm.c",".\vm.c","switchuvm","switchuvm( struct proc * p)",157,178
+10,2,72,3,11,"inituvm@183-193@.\vm.c",".\vm.c","inituvm","inituvm( pde_t * pgdir , char * init , uint sz)",183,193
+19,6,144,5,20,"loaduvm@198-217@.\vm.c",".\vm.c","loaduvm","loaduvm( pde_t * pgdir , char * addr , struct inode * ip , uint offset , uint sz)",198,217
+26,6,152,3,28,"allocuvm@222-249@.\vm.c",".\vm.c","allocuvm","allocuvm( pde_t * pgdir , uint oldsz , uint newsz)",222,249
+22,6,145,3,24,"deallocuvm@256-279@.\vm.c",".\vm.c","deallocuvm","deallocuvm( pde_t * pgdir , uint oldsz , uint newsz)",256,279
+14,4,86,1,15,"freevm@284-298@.\vm.c",".\vm.c","freevm","freevm( pde_t * pgdir)",284,298
+8,2,43,2,9,"clearpteu@303-311@.\vm.c",".\vm.c","clearpteu","clearpteu( pde_t * pgdir , char * uva)",303,311
+28,7,196,2,30,"copyuvm@316-345@.\vm.c",".\vm.c","copyuvm","copyuvm( pde_t * pgdir , uint sz)",316,345
+10,3,69,2,11,"uva2ka@350-360@.\vm.c",".\vm.c","uva2ka","uva2ka( pde_t * pgdir , char * uva)",350,360
+20,4,131,4,21,"copyout@366-386@.\vm.c",".\vm.c","copyout","copyout( pde_t * pgdir , uint va , void * p , uint len)",366,386
+25,7,154,2,26,"wc@8-33@.\wc.c",".\wc.c","wc","wc( int fd , char * name)",8,33
+17,4,107,1,19,"main@36-54@.\wc.c",".\wc.c","main","main( int argc , char * argv [ ])",36,54
+6,1,29,1,7,"inb@4-10@.\x86.h",".\x86.h","inb","inb( ushort port)",4,10
+7,1,49,3,7,"insl@13-19@.\x86.h",".\x86.h","insl","insl( int port , void * addr , int cnt)",13,19
+4,1,27,2,4,"outb@22-25@.\x86.h",".\x86.h","outb","outb( ushort port , uchar data)",22,25
+4,1,27,2,4,"outw@28-31@.\x86.h",".\x86.h","outw","outw( ushort port , ushort data)",28,31
+7,1,48,3,7,"outsl@34-40@.\x86.h",".\x86.h","outsl","outsl( int port , const void * addr , int cnt)",34,40
+7,1,49,3,7,"stosb@43-49@.\x86.h",".\x86.h","stosb","stosb( void * addr , int data , int cnt)",43,49
+7,1,49,3,7,"stosl@52-58@.\x86.h",".\x86.h","stosl","stosl( void * addr , int data , int cnt)",52,58
+8,1,63,2,10,"lgdt@63-72@.\x86.h",".\x86.h","lgdt","lgdt( struct segdesc * p , int size)",63,72
+8,1,63,2,10,"lidt@77-86@.\x86.h",".\x86.h","lidt","lidt( struct gatedesc * p , int size)",77,86
+4,1,19,1,4,"ltr@89-92@.\x86.h",".\x86.h","ltr","ltr( ushort sel)",89,92
+6,1,23,1,6,"readeflags@95-100@.\x86.h",".\x86.h","readeflags","readeflags( void)",95,100
+4,1,19,1,4,"loadgs@103-106@.\x86.h",".\x86.h","loadgs","loadgs( ushort v)",103,106
+4,1,12,1,4,"cli@109-112@.\x86.h",".\x86.h","cli","cli( void)",109,112
+4,1,12,1,4,"sti@115-118@.\x86.h",".\x86.h","sti","sti( void)",115,118
+9,1,42,2,11,"xchg@121-131@.\x86.h",".\x86.h","xchg","xchg( volatile uint * addr , uint newval)",121,131
+6,1,23,1,6,"rcr2@134-139@.\x86.h",".\x86.h","rcr2","rcr2( void)",134,139
+4,1,19,1,4,"lcr3@142-145@.\x86.h",".\x86.h","lcr3","lcr3( uint val)",142,145
+6,2,23,1,6,"main@9-14@.\zombie.c",".\zombie.c","main","main( void)",9,14
